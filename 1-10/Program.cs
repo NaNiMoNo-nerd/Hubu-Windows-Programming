@@ -22,7 +22,8 @@ namespace _1_10
 
             //通过正则表达式将字符串中间的多个空格转换为单个空格
             string pattern = @"\s+";
-            string Final_result = Regex.Replace(str, pattern, " ");
+            string Final_result = Regex.Replace(result_1, pattern, " ");
+
             //输出结果
             Console.WriteLine(Final_result);
         }

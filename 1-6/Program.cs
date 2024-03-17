@@ -26,13 +26,20 @@ namespace _1_6
             }
             return ans;
         }
-        private static void PascalsTriangle(uint n)     //杨辉三角
+        private static void PascalsTriangle(uint n)     //通过C(n,m)杨辉三角
         {
-            for (uint i = 0; i <= n; i++)
+            for (uint i = 0; i < n; i++)
             {
-                for (uint j = 0; j <= n; j++)
+                for (uint j = 0; j < n; j++)
                 {
-                    Console.Write($"{Combination(i, j)}\t");
+                    if (Combination(i , j) == 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.Write($"{Combination(i, j)}\t");
+                    }
                 }
                 Console.WriteLine();
             }

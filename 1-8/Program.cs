@@ -10,8 +10,8 @@ namespace _1_8
     {
         static void Main(string[] args)
         {
-            string words = Console.ReadLine();
-            string target = Console.ReadLine();
+            string words = Console.ReadLine();      //输入目标语句
+            string target = Console.ReadLine();     //输入需要检索的词
             GetNumOfTarget(words, target);
             Console.ReadKey();
         }
